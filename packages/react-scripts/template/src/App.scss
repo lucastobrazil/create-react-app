@@ -1,9 +1,9 @@
-@import "./vars.less";
+@import "./vars.scss";
 .app {
   text-align: center;
   display: flex;
   background-color: white;
-  color: @primaryColor;
+  color: $primaryColor;
   height: 100vh;
   justify-content: center;
   align-items: center;
