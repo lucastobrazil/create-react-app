@@ -216,7 +216,7 @@ module.exports = {
             ],
           },
           {
-            test: /\.less$/,
+            test: /\.scss$/,
             include: paths.appSrc,
             use: [
               require.resolve('style-loader'),
@@ -225,7 +225,7 @@ module.exports = {
                 options: {
                   importLoaders: 1,
                   modules: true,
-                  localIdentName: "[name]__[local]___[hash:base64:5]"
+                  localIdentName: "[folder]-[local]-[hash:base64:5]"
                 },
               },
               {
@@ -248,7 +248,7 @@ module.exports = {
                   ],
                 },
               },
-              'less-loader'
+              'sass-loader'
             ]
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
